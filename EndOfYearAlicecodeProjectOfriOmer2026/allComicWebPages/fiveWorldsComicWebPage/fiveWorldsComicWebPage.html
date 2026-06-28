@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fiveWorldsComicWebPage.css">
+    <script src="../../firstTry.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio loop autoplay controls>
+        <source src="..\..\allAudioFiles\fiveWorldsMusic.mp3" type="audio/mp3">
+    </audio>
+    <div id="post" style="background-color: rgb(255, 245, 233);">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="../../profilePictures/fiveWorldsProfilePicture.png">
+                    <h1 class="username">Five_Worlds_Team</h1>
+                </div>
+                <h2>Five Worlds: The Sand Warrior</h2>
+                <p>34</p>
+                <img class="comics" src="../../allComics/fiveWorldsComic.png">
+                <p>Perhaps there's a way?</p>
+        <div id="likeAndCount">
+            <button style="background-color: rgb(255, 245, 233);" class="likeButton" onclick="changeImage5()"><img id="LikeButtonHeart5" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+            <p id="likeCount5">379</p>
+        </div>
+        <br>
+        <br>
+        <button id="reportButton" onclick="report()">Report</button>
+        <br>
+        <br>
+        <div id="comments">
+            <div class="comment">
+                <img class="profilePictures" src="../../profilePictureBeach.png">
+                <div class="usernameAndComment">
+                    <h1 class="username">Rainbow_The_Most_Hearts</h1>
+                    <p id="userCommentSpace"></p>
+                    <input id="commentInput" style="font-family: Nunito;" type="text">
+                    <button style="font-family: Nunito;" id="commentButton" onclick="postComment()">Comment</button>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="../../profilePictures/defaultProfilePicture.png">
+                <div class="usernameAndComment">
+                    <h1 class="username">Sandra_Lee</h1>
+                    <p>I love five worlds!!!</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/487/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">I_Heart_Nature</h1>
+                    <p>You're welcome!</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/569/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">That_One_Druid</h1>
+                    <p>Oh, thanks I_Heart_Nature!</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/487/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">I_Heart_Nature</h1>
+                    <p>That_One_Druid, I think in a previous page someone said she ran away</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/569/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">That_One_Druid</h1>
+                    <p>Where IS Jessa??</p>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

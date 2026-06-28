@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asterixComicWebPage.css">
+    <script src="../../firstTry.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio loop autoplay controls>
+        <source src="..\..\allAudioFiles\asterixMusic.mp3" type="audio/mp3">
+    </audio>
+    <div id="post">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="..\..\profilePictures\aterixProfilePicture.jpeg">
+                    <h1 class="username">René_Goscinny</h1>
+                </div>
+                <h2><span style="color: rgb(255, 187, 0);">Asterix the Gaul</span></h2>
+                <p>7.1</p>
+                <img class="comics" src="..\..\allComics\asterixComic.png">
+                <p></p>
+        <div id="likeAndCount">
+            <button class="likeButton" onclick="changeImage10()"><img id="LikeButtonHeart10" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+            <p id="likeCount10">1961</p>
+        </div>
+        <br>
+        <br>
+        <button id="reportButton" onclick="report()">Report</button>
+        <br>
+        <br>
+        <div id="comments">
+            <div class="comment">
+                <img class="profilePictures" src="../../profilePictureBeach.png">
+                <div class="usernameAndComment">
+                    <h1 class="username">Rainbow_The_Most_Hearts</h1>
+                    <p id="userCommentSpace"></p>
+                    <input id="commentInput" style="font-family: Nunito;" type="text">
+                    <button style="font-family: Nunito;" id="commentButton" onclick="postComment()">Comment</button>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/971/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">Snowy1929</h1>
+                    <p>Don't disturb the druid!</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/543/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">Trees_And_Stuff</h1>
+                    <p>They're going to disturb the druid, aren't they?</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/569/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">That_One_Druid</h1>
+                    <p>Magic potion! (Do not disturb me while I'm cutting mistletoe haha)</p>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

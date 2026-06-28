@@ -6,133 +6,163 @@
     <title>Document</title>
     <link rel="stylesheet" href="firstTry.css">
     <script src="firstTry.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="postsAndMenu">
         <div id="menu">
             <img id="comicSayLogo" src="ComicSayFirstLogo.png">
+            <img id="userProfilePicture" src="profilePictureBeach.png">
+            <h1 id="username">Rainbow_The_Most_Hearts</h1>
+            <button onclick="redirect15()" class="visitButton">+</button>
         </div>
         <div id="postsVert">
             <div class="postsHori">
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
+            <div class="post" style="font-family: Huninn;">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="profilePictures\defaultProfilePicture.png">
+                    <h1 class="username">News_Reporter</h1>
+                </div>
+                <h2>חדשות</h2>
+                <p>1</p>
+                <img class="comics" src="allComics\alonaComic.png">
                 <p></p>
                 <button class="likeButton" onclick="changeImage1()"><img id="LikeButtonHeart1" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
+                <button class="visitButton" onclick="redirect1()">Visit</button>
             </div>
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
+            <div class="post" style="font-family: Huninn;">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="profilePictures\yardenProfilePicture.png">
+                    <h1 class="username">לירי</h1>
+                </div>
+                <h2>מחסן בחנות טלפונים</h2>
+                <p>1</p>
+                <img class="comics" id="yardenComic" src="allComics\yardenComic.png">
                 <p></p>
                 <button class="likeButton" onclick="changeImage2()"><img id="LikeButtonHeart2" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
+                <button class="visitButton" onclick="redirect2()">Visit</button>
             </div>
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
-                <p></p>
-                <button class="likeButton" onclick="changeImage3()"><img id="LikeButtonHeart3" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
-            </div>
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
-                <p></p>
-                <button class="likeButton" onclick="changeImage4()"><img id="LikeButtonHeart4" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
+            <div class="post" style="font-family: Huninn; background-color: rgb(207, 255, 192);">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="https://picsum.photos/id/56/200/300">
+                    <h1 class="username">Jeronimo</h1>
+                </div>
+                <h2>מומו ומימי</h2>
+                <p>6.8</p>
+                <img class="comics" src="allComics\myComic1UsedOtherPeoplesGraphics.png">
+                <p>ההרפתקה ממשיכה! האם מימי דואג קצת יותר מדי? או שמומו האחת שמתנהגת בצורה לא הגיונית? ואולי זה חצי-חצי?</p>
+                <button class="likeButton" onclick="changeImage3()" style="background-color: rgb(207, 255, 192);"><img id="LikeButtonHeart3" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
+                <button onclick="redirect3()" class="visitButton" style="background-color: brown;">Visit</button>
             </div>
             </div>
             <div class="postsHori">
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
-                <p></p>
-                <button class="likeButton" onclick="changeImage5()"><img id="LikeButtonHeart5" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
+            <div class="post" style="background-color: rgb(255, 245, 233);">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="profilePictures\fiveWorldsProfilePicture.png">
+                    <h1 class="username">Five_Worlds_Team</h1>
+                </div>
+                <h2>Five Worlds: The Sand Warrior</h2>
+                <p>34</p>
+                <img class="comics" src="allComics\fiveWorldsComic.png">
+                <p>Perhaps there's a way?</p>
+                <button style="background-color: rgb(255, 245, 233);" class="likeButton" onclick="changeImage5()"><img id="LikeButtonHeart5" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
+                <button class="visitButton" onclick="redirect5()">Visit</button>
             </div>
             <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
-                <p></p>
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="profilePictures\tintinProfilePicture.png">
+                    <h1 class="username">Hergé</h1>
+                </div>
+                <h2>Tintin: The Black Island</h2>
+                <p>1</p>
+                <img class="comics" src="allComics\tintinComic.png">
+                <p>A new adventure begins!</p>
                 <button class="likeButton" onclick="changeImage6()"><img id="LikeButtonHeart6" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
+                <button onclick="redirect6()" style="background-color: rgb(186, 217, 255); color:rgb(0, 0, 0);" class="visitButton">Visit</button>
             </div>
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
-                <p></p>
-                <button class="likeButton" onclick="changeImage7()"><img id="LikeButtonHeart7" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
+            <div class="post" style="background-color: rgb(72, 0, 48); color:aliceblue">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="profilePictures\amuletProfilePicture.png">
+                    <h1 class="username">Kazu_Kibuishi</h1>
+                </div>
+                <h2>Amulet #7: Firelight</h2>
+                <p>12</p>
+                <img class="comics" src="allComics\amuletComic.png">
+                <p>We'll see Algos very soon.</p>
+                <button style="background-color: rgb(72, 0, 48);" class="likeButton" onclick="changeImage7()"><img id="LikeButtonHeart7" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
+                <button onclick="redirect7()" class="visitButton">Visit</button>
             </div>
             </div>
             <div class="postsHori">
             <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
-                <p></p>
-                <button class="likeButton" onclick="changeImage8()"><img id="LikeButtonHeart8" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
-            </div>
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
-                <p></p>
-                <button class="likeButton" onclick="changeImage9()"><img id="LikeButtonHeart9" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
-            </div>
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="profilePictures\aterixProfilePicture.jpeg">
+                    <h1 class="username">René_Goscinny</h1>
+                </div>
+                <h2><span style="color: rgb(255, 187, 0);">Asterix the Gaul</span></h2>
+                <p>7.1</p>
+                <img class="comics" src="allComics\asterixComic.png">
                 <p></p>
                 <button class="likeButton" onclick="changeImage10()"><img id="LikeButtonHeart10" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
+                <button onclick="redirect10()" style="background-color: rgb(214, 190, 157); color:rgb(0, 0, 0)" class="visitButton">Visit</button>
             </div>
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
+            <div class="post" style="background-color: rgb(221, 220, 220);">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="profilePictures\understandingComicsProfilePicture.jpg">
+                    <h1 class="username">Scott_McCloud</h1>
+                </div>
+                <h2>Understanding Comics Excerpt</h2>
+                <p>1</p>
+                <img class="comics" src="allComics\understandingComicsComic.png">
                 <p></p>
-                <button class="likeButton" onclick="changeImage11()"><img id="LikeButtonHeart11" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
+                <button style="background-color: rgb(221, 220, 220);" class="likeButton" onclick="changeImage11()"><img id="LikeButtonHeart11" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
+                <button onclick="redirect11()" class="visitButton">Visit</button>
             </div>
             </div>
             <div class="postsHori">
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
+            <div class="post" style="background-color:rgb(197, 82, 0);">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="profilePictures\ospProfilePicture.jpg">
+                    <h1 class="username">Overly_Sarcastic_Productions</h1>
+                </div>
+                <h2>Snorri Sturluson and the struggle for primary sources</h2>
+                <p>1</p>
+                <img class="comics" src="allComics\ospComic.png">
+                <p>Snorri, the story is already getting pretty third-hand. Please stop.</p>
+                <button style="background-color:rgb(197, 82, 0);" class="likeButton" onclick="changeImage12()"><img id="LikeButtonHeart12" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
+                <button onclick="redirect12()" class="visitButton">Visit</button>
+            </div>
+            <div class="post" style="background-color: rgb(255, 255, 255);">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="profilePictures\xkcdProfilePicture.png">
+                    <h1 class="username">Randall_Munroe</h1>
+                </div>
+                <h2>Coastline Similarity</h2>
+                <p>3132</p>
+                <img class="comics" src="allComics\xkcdComic.png">
                 <p></p>
-                <button class="likeButton" onclick="changeImage12()"><img id="LikeButtonHeart12" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
+                <button style="background-color: rgb(255, 255, 255);" class="likeButton" onclick="changeImage13()"><img id="LikeButtonHeart13" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
+                <button onclick="redirect13()" class="visitButton">Visit</button>
             </div>
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
-                <p></p>
-                <button class="likeButton" onclick="changeImage13()"><img id="LikeButtonHeart13" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
-            </div>
-            <div class="post">
-                <h2>Comic title</h2>
-                <p>Comic part number</p>
-                <img>
-                <p></p>
-                <button class="likeButton" onclick="changeImage14()"><img id="LikeButtonHeart14" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
-                <button class="visitButton">Visit</button>
+            <div class="post" style="font-family: Huninn; background-color: rgb(202, 161, 102);">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="profilePictures\whoInventedSchoolProfilePicture.png">
+                    <h1 class="username">שהם_סמיט</h1>
+                </div>
+                <h2>קטע מ"מי בכלל המציא את בית הספר?"</h2>
+                <p>1</p>
+                <img class="comics" src="allComics\whoInventedSchoolComic.png">
+                <p>ועוד שאלות שכדאי לשאול בדרך לשם</p>
+                <button class="likeButton" style="background-color: rgb(202, 161, 102);" onclick="changeImage14()"><img id="LikeButtonHeart14" class="likeButtonHeart" src="HeartGraphicNotFull.png"></button>
+                <button onclick="redirect14()" class="visitButton">Visit</button>
             </div>
             </div>
+        <button id="nextPageButton">Next Page</button>
         </div>
     </div>
     <link rel="stylesheet" href="firstTry.css">

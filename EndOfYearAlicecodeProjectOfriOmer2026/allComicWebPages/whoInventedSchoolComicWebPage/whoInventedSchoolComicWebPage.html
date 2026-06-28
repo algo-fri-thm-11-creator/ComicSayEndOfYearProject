@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="whoInventedSchoolComicWebPage.css">
+    <script src="../../firstTry.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="post" style="font-family: Huninn; background-color: rgb(202, 161, 102);">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="../../profilePictures/whoInventedSchoolProfilePicture.png">
+                    <h1 class="username">שהם_סמיט</h1>
+                </div>
+                <h2>קטע מ"מי בכלל המציא את בית הספר?"</h2>
+                <p>1</p>
+                <img class="comics" src="../../allComics/whoInventedSchoolComic.png">
+                <p>ועוד שאלות שכדאי לשאול בדרך לשם</p>
+        <div id="likeAndCount">
+            <button class="likeButton" style="background-color: rgb(202, 161, 102);" onclick="changeImage14()"><img id="LikeButtonHeart14" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+            <p id="likeCount14">375</p>
+        </div>
+        <br>
+        <br>
+        <button id="reportButton" onclick="report()">Report</button>
+        <br>
+        <br>
+        <div id="comments">
+            <div class="comment">
+                <img class="profilePictures" src="../../profilePictureBeach.png">
+                <div class="usernameAndComment">
+                    <h1 class="username">Rainbow_The_Most_Hearts</h1>
+                    <p id="userCommentSpace"></p>
+                    <input id="commentInput" style="font-family: Nunito;" type="text">
+                    <button style="font-family: Nunito;" id="commentButton" onclick="postComment()">Comment</button>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

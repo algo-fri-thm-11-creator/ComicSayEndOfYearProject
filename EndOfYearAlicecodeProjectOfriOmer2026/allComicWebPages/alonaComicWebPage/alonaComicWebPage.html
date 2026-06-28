@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="alonaComicWebPage.css">
+    <script src="../../firstTry.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="post" style="font-family: Huninn;">
+        <div class="usernameAndProfilePicture">
+            <img class="profilePictures" src="../../profilePictures/defaultProfilePicture.png">
+            <h1 class="username">News_Reporter</h1>
+        </div>
+        <h2>חדשות</h2>
+        <p>1</p>
+        <img class="comics" src="../../allComics/alonaComic.png">
+        <p></p>
+        <div id="likeAndCount">
+            <button class="likeButton" onclick="changeImage1()"><img id="LikeButtonHeart1" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+            <p id="likeCount1">1834</p>
+        </div>
+        <br>
+        <br>
+        <button id="reportButton" onclick="report()">Report</button>
+        <br>
+        <br>
+        <div id="comments">
+            <div class="comment">
+                <img class="profilePictures" src="../../profilePictureBeach.png">
+                <div class="usernameAndComment">
+                    <h1 class="username">Rainbow_The_Most_Hearts</h1>
+                    <p id="userCommentSpace"></p>
+                    <input id="commentInput" style="font-family: Nunito;" type="text">
+                    <button style="font-family: Nunito;" id="commentButton" onclick="postComment()">Comment</button>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/237/200/300">
+                <div class="usernameAndComment">
+                    <h1 class="username">Old_School_Inking</h1>
+                    <p>קורע</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/18/200/300">
+                <div class="usernameAndComment">
+                    <h1 class="username">Ginges</h1>
+                    <p>אני לא יודע למה, אבל אני מת על זה</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/177/200/300">
+                <div class="usernameAndComment">
+                    <h1 class="username">Parks_Lover</h1>
+                    <p>אני מרגישה ממש רע בשביל האוגר</p>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

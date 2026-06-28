@@ -3,14 +3,15 @@ body {
     background-repeat: repeat;
     background-size: auto;
     background-clip: content-box;
+    font-family: Nunito;
 }
 
 .post {
     background-color: rgb(249, 248, 248);
-    font-family:Arial, Helvetica, sans-serif;
     border-radius: 25px;
     border: 2px solid #000000;
     padding: 10px;
+    font-family: Nunito;
 }
 
 .postsHori {
@@ -42,17 +43,84 @@ body {
     display:flex;
     flex-direction: row;
     gap: 15px;
+    font-family: Nunito;
 }
 
 #menu {
+    display:flex;
+    flex-direction: column;
     background-color: rgb(249, 248, 248);
     font-family:Arial, Helvetica, sans-serif;
     border-radius: 25px;
     border: 2px solid #000000;
     padding: 10px;
+    align-items: center;
+    font-family: Nunito;
 }
 
 #comicSayLogo {
     height:120px;
     margin-left:9px;
+}
+
+#userProfilePicture {
+    width:100px;
+    height:100px;
+    border-radius: 150px;
+    border: 10px solid #000000;
+}
+
+.profilePictures {
+    width:40px;
+    height:40px;
+    border-radius: 150px;
+    border: 5px solid #000000;
+}
+
+#username {
+    font-size: 15px;
+}
+
+.comics {
+    width:100%;
+}
+
+.usernameAndProfilePicture {
+    display:flex;
+    flex-direction: row;
+    justify-content:start;
+    gap: 10px;
+}
+
+.username {
+    font-size: 20px;
+}
+
+#nextPageButton {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 10px;
+    font-family: Nunito;
+    font-size: 25px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nextPageButton:hover {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 115, 255);
+}
+
+.visitButton {
+    background-color: rgb(0, 115, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 2px solid #000000;
+    padding: 3px;
+    font-family: Nunito;
+    width: 50px;
+    font-size: 10px;
 }

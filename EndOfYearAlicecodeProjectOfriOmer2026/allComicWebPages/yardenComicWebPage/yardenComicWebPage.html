@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="yardenComicWebPage.css">
+    <script src="../../firstTry.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="post" style="font-family: Huninn;">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="../../profilePictures/yardenProfilePicture.png">
+                    <h1 class="username">לירי</h1>
+                </div>
+                <h2>מחסן בחנות טלפונים</h2>
+                <p>1</p>
+                <img class="comics" id="yardenComic" src="../../allComics/yardenComic.png">
+                <p></p>
+        <div id="likeAndCount">
+            <button class="likeButton" onclick="changeImage2()"><img id="LikeButtonHeart2" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+            <p id="likeCount2">786</p>
+        </div>
+        <br>
+        <br>
+        <button id="reportButton" onclick="report()">Report</button>
+        <br>
+        <br>
+        <div id="comments">
+            <div class="comment">
+                <img class="profilePictures" src="../../profilePictureBeach.png">
+                <div class="usernameAndComment">
+                    <h1 class="username">Rainbow_The_Most_Hearts</h1>
+                    <p id="userCommentSpace"></p>
+                    <input id="commentInput" style="font-family: Nunito;" type="text">
+                    <button style="font-family: Nunito;" id="commentButton" onclick="postComment()">Comment</button>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/20/200/200">
+                <div class="usernameAndComment">
+                    <h1 style="font-family: Huninn;" class="username">אוהב_טלפונים</h1>
+                    <p>חחחחחחחחחחחח</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/836/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">גברת_שולה</h1>
+                    <p>בתור עובדת בחנות טכנולוגיה, זה לגמרי נכון</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/26/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">ספר_טוב_הכל_טוב</h1>
+                    <p>זה גאוני</p>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

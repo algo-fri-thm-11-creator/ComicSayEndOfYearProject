@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="comicUploadPage.css">
+    <script src="comicUploadPage.js"></script>
+</head>
+<body>
+    <div id="backgroundNoBody">
+        <div id="introduction" class="whiteBoxes">
+            <h1 id="title">Post a Comic</h1>
+            <h2 id="tagline">Welcome to the post a comic page! Please follow the steps to create your post.</h2>
+        </div>
+        <div><h1></h1></div>
+        <div id="imageUpload" class="whiteBoxes">
+            <h2><span style="color: rgb(0, 115, 255);">✱</span> Upload Comic</h2>
+            <h3>Upload your comic page here.</h3>
+            <input style="color: rgb(0, 115, 255);" id="upload" type="file" onChange="handleImageUpload()"/>
+            <br>
+            <img id="display-image" src="YourImage.png" style="width:400px"/>
+        </div>
+        <div><h1></h1></div>
+        <div id="textAndNumbers" class="whiteBoxes">
+            <h2><span style="color: rgb(0, 115, 255);">✱</span> Text and Numbers</h2>
+            <h3>Add the text needed for your post.</h3>
+            <label style="font-size: 25px;" for="comicTitleInput">Comic title: </label>
+            <input style="background-color: rgb(249, 248, 248); font-family: Nunito; font-size: 25px;" type="text" id="comicTitleInput" name="comicTitleInput">
+            <br>
+            <br>
+            <label style="font-size: 20px;" for="comicNumberInput">Comic number: </label>
+            <input style="background-color: rgb(249, 248, 248); font-family: Nunito; font-size: 17px;" type="number" id="comicNumberInput" name="comicNumberInput" min="1">
+            <h4>If your comic is a standalone one, enter "1"</h4>
+            <label style="font-size: 20px;" for="comicTextInput">Description: </label>
+            <input style="background-color: rgb(249, 248, 248); font-family: Nunito; font-size: 17px; width: 500px;" type="text" id="comicTextInput" name="comicTextInput">
+        </div>
+        <div><h1></h1></div>
+        <div id="colorPick" class="whiteBoxes">
+            <h2><span style="color: rgb(0, 115, 255);">✱</span> Choose Colors for your post</h2>
+            <h3>Choose the colors for different parts of your post.</h3>
+            <div id="colorsAndLabels">
+                <div id="colors1">
+                    <div id="backgroundColorDiv">
+                        <label class="labels" for="backgroundColor">Background color: </label>
+                        <input type="color" id="backgroundColor" value="#f9f8f8">
+                    </div>
+                    <br>
+                    <div id="titleColorDiv">
+                        <label class="labels" for="titleColor">Title color: </label>
+                        <input type="color" id="titleColor" value="#000000">
+                    </div>
+                    <br>
+                    <div id="visitButtonColorDiv">
+                        <label class="labels" for="visitButtonColor">Visit button color: </label>
+                        <input type="color" id="visitButtonColor" value="#0073ff">
+                    </div>
+                </div>
+                <div id="colors2">
+                    <div id="comicNumberTextColorDiv">
+                        <label class="labels" for="comicNumberTextColor">Comic number color: </label>
+                        <input type="color" id="comicNumberTextColor" value="#000000">
+                    </div>
+                    <br>
+                    <div id="textColorDiv">
+                        <label class="labels" for="textColor">Text color: </label>
+                        <input type="color" id="textColor" value="#000000">
+                    </div>
+                    <br>
+                    <div id="usernameColorDiv">
+                        <label class="labels" for="usernameColor">Username color: </label>
+                        <input type="color" id="usernameColor" value="#000000">
+                    </div>
+                </div>
+                <div id="colors3">
+                    <div id="visitButtonTextColorDiv">
+                        <label class="labels" for="visitButtonTextColor">Visit button text color: </label>
+                        <input type="color" id="visitButtonTextColor" value="#ffffff">
+                    </div>
+                    <br>
+                    <div id="profilePictureBorderColorDiv">
+                        <label class="labels" for="profilePictureBorderColor">Profile picture border color: </label>
+                        <input type="color" id="profilePictureBorderColor" value="#000000">
+                    </div>
+                    <br>
+                    <div id="postBorderColorDiv">
+                        <label class="labels" for="postBorderColor">Post border color: </label>
+                        <input type="color" id="postBorderColor" value="#000000">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><h1></h1></div>
+        <div id="extras" class="whiteBoxes">
+            <h2><span style="color: rgb(0, 115, 255);">✱</span> Extras</h2>
+            <h3>Optional settings for your comic page.</h3>
+            <div id="uploadPageBackgroundDiv">
+                <label class="labels" for="uploadPageBackground">Image for the background of your comic's web page: </label>
+                <input style="color: rgb(0, 115, 255);" id="uploadPageBackground" type="file" onChange="handleImageUpload2()"/>
+                <br>
+                <img id="display-image2" src="YourImage.png" style="width:400px"/>
+            </div>
+            <br>
+            <br>
+            <div id="uploadBackgroundMusicDiv">
+                <label class="labels" for="uploadBackgroundMusic">Background music for your comic's web page: </label>
+                <input style="color: rgb(0, 115, 255);" id="uploadBackgroundMusic" type="file" accept="audio/*">
+                <br>
+                <audio id="musicPlayer" controls=""></audio>
+                <br>
+                <button onclick="playMusic()">Play</button>
+            </div>
+        </div>
+        <div><h1></h1></div>
+        <div id="post">
+            <button id="postButton">Post</button>
+        </div>
+    </div>
+    <link rel="stylesheet" href="comicUploadPage.css">
+    <script src="comicUploadPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="xkcdComicWebPage.css">
+    <script src="../../firstTry.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="post" style="background-color: rgb(255, 255, 255);">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="../../profilePictures/xkcdProfilePicture.png">
+                    <h1 class="username">Randall_Munroe</h1>
+                </div>
+                <h2>Coastline Similarity</h2>
+                <p>3132</p>
+                <img class="comics" src="../../allComics/xkcdComic.png">
+                <p></p>
+        <div id="likeAndCount">
+            <button style="background-color: rgb(255, 255, 255);" class="likeButton" onclick="changeImage13()"><img id="LikeButtonHeart13" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+            <p id="likeCount13">537</p>
+        </div>
+        <br>
+        <br>
+        <button id="reportButton" onclick="report()">Report</button>
+        <br>
+        <br>
+        <div id="comments">
+            <div class="comment">
+                <img class="profilePictures" src="../../profilePictureBeach.png">
+                <div class="usernameAndComment">
+                    <h1 class="username">Rainbow_The_Most_Hearts</h1>
+                    <p id="userCommentSpace"></p>
+                    <input id="commentInput" style="font-family: Nunito;" type="text">
+                    <button style="font-family: Nunito;" id="commentButton" onclick="postComment()">Comment</button>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/375/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">Puppers_ComicSay</h1>
+                    <p>This is a type of comedy I love.</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/573/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">Student_Life_I_Guess</h1>
+                    <p>Amazing.</p>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tintinComicWebPage.css">
+    <script src="../../firstTry.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio loop autoplay controls>
+        <source src="..\..\allAudioFiles\tintinMusic.mp3" type="audio/mp3">
+    </audio>
+    <div id="post">
+                <div class="usernameAndProfilePicture">
+                    <img class="profilePictures" src="../../profilePictures/tintinProfilePicture.png">
+                    <h1 class="username">Hergé</h1>
+                </div>
+                <h2>Tintin: The Black Island</h2>
+                <p>1</p>
+                <img class="comics" src="../../allComics/tintinComic.png">
+                <p>A new adventure begins!</p>
+        <div id="likeAndCount">
+            <button class="likeButton" onclick="changeImage6()"><img id="LikeButtonHeart6" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+            <p id="likeCount6">543</p>
+        </div>
+        <br>
+        <br>
+        <button id="reportButton" onclick="report()">Report</button>
+        <br>
+        <br>
+        <div id="comments">
+            <div class="comment">
+                <img class="profilePictures" src="../../profilePictureBeach.png">
+                <div class="usernameAndComment">
+                    <h1 class="username">Rainbow_The_Most_Hearts</h1>
+                    <p id="userCommentSpace"></p>
+                    <input id="commentInput" style="font-family: Nunito;" type="text">
+                    <button style="font-family: Nunito;" id="commentButton" onclick="postComment()">Comment</button>
+                </div>
+            </div>
+            <div class="comment">
+                <img class="profilePictures" src="https://picsum.photos/id/15/200/200">
+                <div class="usernameAndComment">
+                    <h1 class="username">tintinFan</h1>
+                    <p>A new adventure!!! </p>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
