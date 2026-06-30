@@ -214,6 +214,9 @@ function changeImage14() {
     }
 }
 
+function redirectHome() {
+    window.location.replace("../../index.html")
+}
 
 function redirect1() {
     window.location.replace("allComicWebPages/alonaComicWebPage/alonaComicWebPage.html")
