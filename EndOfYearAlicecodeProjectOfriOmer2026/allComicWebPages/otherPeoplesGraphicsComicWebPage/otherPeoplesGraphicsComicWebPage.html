@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="redirectHomeButton" onclick="redirectHome()">🏠︎</button>
+    <br>
+    <br>
+    <div id="postArea">
     <div id="post" style="font-family: Huninn; background-color: rgb(207, 255, 192);">
                 <div class="usernameAndProfilePicture">
                     <img class="profilePictures" src="https://picsum.photos/id/56/200/300">
@@ -23,9 +27,15 @@
                 <p>6.8</p>
                 <img class="comics" src="../../allComics/myComic1UsedOtherPeoplesGraphics.png">
                 <p>ההרפתקה ממשיכה! האם מימי דואג קצת יותר מדי? או שמומו האחת שמתנהגת בצורה לא הגיונית? ואולי זה חצי-חצי?</p>
-        <div id="likeAndCount">
-            <button class="likeButton" onclick="changeImage3()" style="background-color: rgb(207, 255, 192);"><img id="LikeButtonHeart3" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
-            <p id="likeCount3">53</p>
+        <div id="likeAndCountAndTags">
+            <div id="likeAndCount">
+                <button class="likeButton" onclick="changeImage3()" style="background-color: rgb(207, 255, 192);"><img id="LikeButtonHeart3" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+                <p id="likeCount3">53</p>
+            </div>
+            <div id="tags">
+                <p class="tag">funny</p>
+                <p class="tag">adventure</p>
+            </div>
         </div>
         <br>
         <br>
@@ -53,5 +63,6 @@
             </div>
         </div>
      </div>
+    </div>
 </body>
 </html>

@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="redirectHomeButton" onclick="redirectHome()">🏠︎</button>
+    <br>
+    <br>
+    <div id="postArea">
     <audio loop autoplay controls>
         <source src="..\..\allAudioFiles\asterixMusic.mp3" type="audio/mp3">
     </audio>
@@ -26,9 +30,17 @@
                 <p>7.1</p>
                 <img class="comics" src="..\..\allComics\asterixComic.png">
                 <p></p>
-        <div id="likeAndCount">
-            <button class="likeButton" onclick="changeImage10()"><img id="LikeButtonHeart10" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
-            <p id="likeCount10">1961</p>
+        <div id="likeAndCountAndTags">
+            <div id="likeAndCount">
+                <button class="likeButton" onclick="changeImage10()"><img id="LikeButtonHeart10" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+                <p id="likeCount10">1961</p>
+            </div>
+            <div id="tags">
+                <p class="tag">historical</p>
+                <p class="tag">fantasy</p>
+                <p class="tag">adventure</p>
+                <p class="tag">funny</p>
+            </div>
         </div>
         <br>
         <br>
@@ -67,6 +79,7 @@
                 </div>
             </div>
         </div>
+     </div>
      </div>
 </body>
 </html>

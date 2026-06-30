@@ -40,6 +40,10 @@
             <h4>If your comic is a standalone one, enter "1"</h4>
             <label style="font-size: 20px;" for="comicTextInput">Description: </label>
             <input style="background-color: rgb(249, 248, 248); font-family: Nunito; font-size: 17px; width: 500px;" type="text" id="comicTextInput" name="comicTextInput">
+            <br>
+            <br>
+            <label style="font-size: 20px;" for="comicTagInput">Tags: (seperate tags with a ",")</label>
+            <input style="background-color: rgb(249, 248, 248); font-family: Nunito; font-size: 17px; width: 500px;" type="text" id="comicTagInput" name="comicTagInput">
         </div>
         <div><h1></h1></div>
         <div id="colorPick" class="whiteBoxes">
@@ -119,7 +123,7 @@
         </div>
         <div><h1></h1></div>
         <div id="post">
-            <button id="postButton">Post</button>
+            <button id="postButton" onclick="postComic()">Post</button>
         </div>
     </div>
     <link rel="stylesheet" href="comicUploadPage.css">

@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="redirectHomeButton" onclick="redirectHome()">🏠︎</button>
+    <br>
+    <br>
+    <div id="postArea">
     <div id="post" style="font-family: Huninn;">
         <div class="usernameAndProfilePicture">
             <img class="profilePictures" src="../../profilePictures/defaultProfilePicture.png">
@@ -23,9 +27,20 @@
         <p>1</p>
         <img class="comics" src="../../allComics/alonaComic.png">
         <p></p>
-        <div id="likeAndCount">
-            <button class="likeButton" onclick="changeImage1()"><img id="LikeButtonHeart1" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
-            <p id="likeCount1">1834</p>
+        <div id="likeAndCountAndTags">
+            <div id="likeAndCount">
+                <button class="likeButton" onclick="changeImage1()"><img id="LikeButtonHeart1" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+                <p id="likeCount1">1834</p>
+            </div>
+            <div id="tags">
+                <p class="tag">funny</p>
+                <p class="tag">animal</p>
+                <p class="tag">cat</p>
+                <p class="tag">news</p>
+                <p class="tag">hand drawn</p>
+                <p class="tag">hebrew</p>
+            </div>
+        </div>
         </div>
         <br>
         <br>
@@ -64,6 +79,7 @@
                 </div>
             </div>
         </div>
+     </div>
      </div>
 </body>
 </html>

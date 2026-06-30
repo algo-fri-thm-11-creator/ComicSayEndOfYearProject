@@ -23,4 +23,8 @@ function playMusic() {
       var musicPlayer = document.getElementById("musicPlayer");
       musicPlayer.src = URL.createObjectURL(musicFile);
       musicPlayer.play();
-    }
+}
+
+function postComic() {
+  window.location.replace("../index.html")
+}

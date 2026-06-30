@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="redirectHomeButton" onclick="redirectHome()">🏠︎</button>
+    <br>
+    <br>
+    <div id="postArea">
     <div id="post" style="font-family: Huninn; background-color: rgb(202, 161, 102);">
                 <div class="usernameAndProfilePicture">
                     <img class="profilePictures" src="../../profilePictures/whoInventedSchoolProfilePicture.png">
@@ -23,9 +27,16 @@
                 <p>1</p>
                 <img class="comics" src="../../allComics/whoInventedSchoolComic.png">
                 <p>ועוד שאלות שכדאי לשאול בדרך לשם</p>
-        <div id="likeAndCount">
-            <button class="likeButton" style="background-color: rgb(202, 161, 102);" onclick="changeImage14()"><img id="LikeButtonHeart14" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
-            <p id="likeCount14">375</p>
+        <div id="likeAndCountAndTags">
+            <div id="likeAndCount">
+                <button class="likeButton" style="background-color: rgb(202, 161, 102);" onclick="changeImage14()"><img id="LikeButtonHeart14" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+                <p id="likeCount14">375</p>
+            </div>
+            <div id="tags">
+                <p class="tag">school</p>
+                <p class="tag">funny</p>
+                <p class="tag">kids</p>
+            </div>
         </div>
         <br>
         <br>
@@ -43,6 +54,7 @@
                 </div>
             </div>
         </div>
+     </div>
      </div>
 </body>
 </html>

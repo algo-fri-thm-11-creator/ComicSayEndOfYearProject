@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="redirectHomeButton" onclick="redirectHome()">🏠︎</button>
+    <br>
+    <br>
+    <div id="postArea">
     <audio loop autoplay controls>
         <source src="..\..\allAudioFiles\fiveWorldsMusic.mp3" type="audio/mp3">
     </audio>
@@ -26,9 +30,17 @@
                 <p>34</p>
                 <img class="comics" src="../../allComics/fiveWorldsComic.png">
                 <p>Perhaps there's a way?</p>
-        <div id="likeAndCount">
-            <button style="background-color: rgb(255, 245, 233);" class="likeButton" onclick="changeImage5()"><img id="LikeButtonHeart5" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
-            <p id="likeCount5">379</p>
+        <div id="likeAndCountAndTags">
+            <div id="likeAndCount">
+                <button style="background-color: rgb(255, 245, 233);" class="likeButton" onclick="changeImage5()"><img id="LikeButtonHeart5" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+                <p id="likeCount5">379</p>
+            </div>
+            <div id="tags">
+                <p class="tag">fantasy</p>
+                <p class="tag">high fantasy</p>
+                <p class="tag">adventure</p>
+                <p class="tag">magic</p>
+            </div>
         </div>
         <br>
         <br>
@@ -81,6 +93,7 @@
                 </div>
             </div>
         </div>
+     </div>
      </div>
 </body>
 </html>

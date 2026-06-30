@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="redirectHomeButton" onclick="redirectHome()">🏠︎</button>
+    <br>
+    <br>
+    <div id="postArea">
     <audio loop autoplay controls>
         <source src="..\..\allAudioFiles\ospMusic.mp3" type="audio/mp3">
     </audio>
@@ -26,9 +30,16 @@
                 <p>1</p>
                 <img class="comics" src="../../allComics/ospComic.png">
                 <p>Snorri, the story is already getting pretty third-hand. Please stop.</p>
-        <div id="likeAndCount">
-            <button style="background-color:rgb(197, 82, 0);" class="likeButton" onclick="changeImage12()"><img id="LikeButtonHeart12" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
-            <p id="likeCount12">645</p>
+        <div id="likeAndCountAndTags">
+            <div id="likeAndCount">
+                <button style="background-color:rgb(197, 82, 0);" class="likeButton" onclick="changeImage12()"><img id="LikeButtonHeart12" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+                <p id="likeCount12">645</p>
+            </div>
+            <div id="tags">
+                <p class="tag">history</p>
+                <p class="tag">nordic</p>
+                <p class="tag">norse mythology</p>
+            </div>
         </div>
         <br>
         <br>
@@ -67,6 +78,7 @@
                 </div>
             </div>
         </div>
+     </div>
      </div>
 </body>
 </html>

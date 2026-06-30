@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="redirectHomeButton" onclick="redirectHome()">🏠︎</button>
+    <br>
+    <br>
+    <div id="postArea">
     <div id="post" style="background-color: rgb(255, 255, 255);">
                 <div class="usernameAndProfilePicture">
                     <img class="profilePictures" src="../../profilePictures/xkcdProfilePicture.png">
@@ -23,9 +27,16 @@
                 <p>3132</p>
                 <img class="comics" src="../../allComics/xkcdComic.png">
                 <p></p>
-        <div id="likeAndCount">
-            <button style="background-color: rgb(255, 255, 255);" class="likeButton" onclick="changeImage13()"><img id="LikeButtonHeart13" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
-            <p id="likeCount13">537</p>
+        <div id="likeAndCountAndTags">
+            <div id="likeAndCount">
+                <button style="background-color: rgb(255, 255, 255);" class="likeButton" onclick="changeImage13()"><img id="LikeButtonHeart13" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+                <p id="likeCount13">537</p>
+            </div>
+            <div id="tags">
+                <p class="tag">funny</p>
+                <p class="tag">geology</p>
+                <p class="tag">science</p>
+            </div>
         </div>
         <br>
         <br>
@@ -57,6 +68,7 @@
                 </div>
             </div>
         </div>
+     </div>
      </div>
 </body>
 </html>

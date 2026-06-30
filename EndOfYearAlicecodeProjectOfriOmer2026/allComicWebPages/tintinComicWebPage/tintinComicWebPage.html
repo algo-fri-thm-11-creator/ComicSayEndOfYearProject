@@ -14,6 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button id="redirectHomeButton" onclick="redirectHome()">🏠︎</button>
+    <br>
+    <br>
+    <div id="postArea">
     <audio loop autoplay controls>
         <source src="..\..\allAudioFiles\tintinMusic.mp3" type="audio/mp3">
     </audio>
@@ -26,9 +30,16 @@
                 <p>1</p>
                 <img class="comics" src="../../allComics/tintinComic.png">
                 <p>A new adventure begins!</p>
-        <div id="likeAndCount">
-            <button class="likeButton" onclick="changeImage6()"><img id="LikeButtonHeart6" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
-            <p id="likeCount6">543</p>
+        <div id="likeAndCountAndTags">
+            <div id="likeAndCount">
+                <button class="likeButton" onclick="changeImage6()"><img id="LikeButtonHeart6" class="likeButtonHeart" src="../../HeartGraphicNotFull.png"></button>
+                <p id="likeCount6">543</p>
+            </div>
+            <div id="tags">
+                <p class="tag">adventure</p>
+                <p class="tag">crime solving</p>
+                <p class="tag">mystery</p>
+            </div>
         </div>
         <br>
         <br>
@@ -56,5 +67,6 @@
             </div>
         </div>
      </div>
+    </div>
 </body>
 </html>
